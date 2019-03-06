@@ -15,6 +15,7 @@ pipeline {
         }
         stage('Production') {
             steps {
+                input 'Do you want to proceed?'
                 echo 'Production'
             }            
         }        
